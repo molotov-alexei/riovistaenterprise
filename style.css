@@ -2,17 +2,78 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: #F8F9F3;
+}
 .main__conten{
     display: flex;
 }
+.sidebar{
+    background-color: #fff;
+    position: fixed;
+    height: 100dvh;
+    width: clamp(200px, 20vw, 240px);
+    font-size: clamp(.6rem, 2.2vw, 1.5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 10;
+}
+.open__menu input[type= checkbox]{
+    display: none;
+}
+.open__menu label{
+    user-select: none;
+    position: absolute;
+    right: 10px;
+}
 .aside__contain{
     border: 1px solid #000;
-    width: clamp(200px , 20%, 250px);
+    width: clamp(100px , 20%, 100px);
     height: 100dvh;
-    padding: 20px;
+
 }
+.sidebar__img{
+    height: 100px;
+
+}
+.sidebar__img img{
+    width: 100px;
+    height: 120px;
+}
+.ul__aside___nav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ul__aside___nav a{
+    text-decoration: none;
+    color: inherit;
+    padding-left: 10px;
+}
+
+.aside__item{
+    display: flex;
+    align-items: center;
+}
+.sidebar:has(input[type="checkbox"]:checked){
+    width: 100px;
+}
+.sidebar:has(input[type="checkbox"]:checked) .aside__item a{
+display: none;
+}
+.sidebar:has(input[type="checkbox"]:checked) .sidebar__img img{
+width: 60px;
+height: 80px;
+}
+
+
+
+
 .products__content{
-    width: clamp(800px, 90%, 1124px);
+    width: clamp(800px, 90%, 1200px);
     border: 1px solid #000;
     height: 100dvh;
     display: grid;
@@ -20,11 +81,13 @@
     grid-template-rows: 100px 1fr;
     box-sizing: border-box;
 }
-h1{
+.header__products{
     border: 1px solid #000;
     grid-column: span 3;
-
-}
+    }
+    h1{
+        text-align: center;
+    }
 .footer{
     border: 1px solid #000;
     width: clamp(380px, 100%, 100%);
@@ -32,6 +95,6 @@ h1{
 }
 .product__item{
     border: 1px solid#000;
-    width: clamp(330px, 30%, 450px);
+    width: clamp(390px, 30%, 550px);
     height: 100%;
 }
