@@ -41,6 +41,7 @@ body{
 .sidebar__img img{
     width: 100px;
     height: 120px;
+    filter: blur(10px);
 }
 .ul__aside___nav{
     list-style: none;

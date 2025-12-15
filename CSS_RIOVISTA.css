@@ -113,6 +113,7 @@ a {
     border-left: 4px solid var(--accent-blue);
     border-radius: 4px;
     transition: transform 0.2s ease;
+    height: 300px;
 }
 
 .product__item:hover {
@@ -125,6 +126,48 @@ a {
     font-weight: bold;
     color: var(--text-main);
     display: block;
+}
+
+
+.--blindaje{
+    transition: .8s ;
+    background-image: url(imagenes/blindaje2.jpg);
+    background-size: auto;
+    background-position: 0 -500px;
+}
+
+.--blindaje:hover{
+    background-image: url(imagenes/cahaleco1.jpg);
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.--defensa-electronica{
+transition: .8s  ;
+background-image: url(imagenes/contramedidas.jpg);
+background-position: 0 -350px;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.--defensa-electronica:hover{
+    background-image: url(imagenes/contramedidas2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: right -1000px;
+}
+.--servicios{
+transition: .8s;
+    background-image: url(imagenes/servicios2.jpg);
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: right -300px;
+}
+.--servicios:hover{
+    background-image: url(imagenes/servicios.jpg);
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: right ;
 }
 
 /* --- FOOTER --- */
