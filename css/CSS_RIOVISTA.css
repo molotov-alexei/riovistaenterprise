@@ -1,0 +1,189 @@
+/* --- VARIABLES: TECH PALETTE (Skyfend Based) --- */
+:root {
+    --bg-main: #0A0A0A;
+    --bg-panel: #1F1F1F;
+    --text-main: #FFFFFF;
+    --text-muted: #B0B0B0;
+    --accent-blue: #00C2FF; /* Cyber Blue */
+    --accent-red: #FF3B30;   /* Warning/Action */
+    --accent-yellow: #FFCC00;
+}
+
+/* --- RESET & BASE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+/* --- LAYOUT --- */
+.main__conten { /* Matches your HTML class typo */
+    display: flex;
+    min-height: 100vh;
+}
+
+/* --- SIDEBAR --- */
+.aside__contain {
+    width: 250px;
+    background-color: var(--bg-panel);
+    border-right: 1px solid #333;
+    flex-shrink: 0;
+}
+
+.sidebar {
+    padding: 20px;
+    height: 100%;
+    position: relative;
+}
+
+/* Checkbox hack hiding */
+.open__menu input { display: none; }
+.open__menu label { color: var(--text-main); cursor: pointer; display: none;}
+
+.sidebar__img img {
+    width: 100%;
+    max-width: 150px;
+    display: block;
+    margin: 0 auto 30px;
+    border-radius: 8px;
+    border: 1px solid var(--accent-blue); /* Tech border */
+}
+
+.ul__aside___nav {
+    list-style: none;
+}
+
+.aside__item {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    color: var(--text-muted);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.aside__item span {
+    margin-right: 10px;
+    color: var(--accent-blue);
+}
+
+.aside__item:hover {
+    background-color: rgba(0, 194, 255, 0.1);
+    color: var(--text-main);
+}
+
+/* --- MAIN CONTENT --- */
+.products__content {
+    flex-grow: 1;
+    padding: 40px;
+}
+
+.header__products h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header__products p {
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+/* Product Cards */
+.product__item {
+    background-color: var(--bg-panel);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-left: 4px solid var(--accent-blue);
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+    height: 300px;
+}
+
+.product__item:hover {
+    transform: translateX(10px);
+    border-left-color: var(--accent-yellow);
+}
+
+.product__item a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-main);
+    display: block;
+}
+
+
+.--blindaje{
+    transition: .8s ;
+    background-image: url(imagenes/blindaje2.jpg);
+    background-size: auto;
+    background-position: 0 -500px;
+}
+
+.--blindaje:hover{
+    background-image: url(imagenes/cahaleco1.jpg);
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.--defensa-electronica{
+transition: .8s  ;
+background-image: url(imagenes/contramedidas.jpg);
+background-position: 0 -350px;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.--defensa-electronica:hover{
+    background-image: url(imagenes/contramedidas2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: right -1000px;
+}
+.--servicios{
+transition: .8s;
+    background-image: url(imagenes/servicios2.jpg);
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: right -300px;
+}
+.--servicios:hover{
+    background-image: url(imagenes/servicios.jpg);
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: right ;
+}
+
+/* --- FOOTER --- */
+.footer {
+    background-color: var(--bg-panel);
+    color: var(--text-muted);
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 768px) {
+    .main__conten { flex-direction: column; }
+    .aside__contain { width: 100%; height: auto; }
+    .ul__aside___nav { display: flex; flex-wrap: wrap; justify-content: center; }
+    .aside__item { margin: 5px; }
+}
