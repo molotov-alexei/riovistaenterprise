@@ -17,12 +17,22 @@ body{
     height: 200px;
 
 }
+.sidebar{
+    padding: 0;
+    width: 250px;
+    position: sticky;
+    top: 0;
+}
+
 .main{
     display: flex;
     color: var(--text-main);
 }
 .ul__aside___nav{
     list-style: none;
+    text-align: start;
+    padding: 0;
+    
 }
 .ul__aside___nav{
     display: flex;
@@ -33,26 +43,38 @@ body{
 .ul__aside___nav li {
     display: flex;
     margin: 20px;
+    color: var(--accent-blue);
 
 }
 .ul__aside___nav a{
     text-decoration: none;
     margin-left: 5px;
-    color: #000;
+    color: var(--text-main);
+}
+.aside__item{
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+.aside__item:hover{
+    background-color: rgba(0, 194, 255, 0.1);
+    color: var(--text-main);
 
 }
+
 .grid-content{
     height: auto;
     width: 100%;
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: repeat(15, 400px) ;
+    grid-template-rows: repeat(15, 450px) ;
     grid-auto-flow: row;
     border: 1px solid#000;
+    gap: 20px;
 }
 .items-armor{
     width: 100%;
     height: auto;
+    box-sizing: border-box;
 }
 
 .items-armor div {
@@ -60,8 +82,41 @@ width: 100%;
 height: 100%;
 position: relative;
 }
-.items-armor img{
+.items-armor h2{
+    text-align: center;
+}
+.--armor-1{
     position: absolute;
     width: 100%;
-    height: 100%;    
+    height: 100%; 
+    border-radius: 15px;   
+}
+.s-link-1__p{
+    text-align: center;
+    line-height: 45px;
+}
+.--armor-2{
+    width: 100%;
+    height: 100%; 
+    border-radius: 15px;  
+}
+.s-link-1__ul li{
+    margin-bottom: 8px;
+}
+.carrousel-containt{
+    width: 100%;
+    overflow: ;
+}
+.carousel-slide {
+display: flex;
+width: 200%;
+animation: carousel-animation 3s infinite; 
+}
+@keyframes carousel-animation {
+    to{
+        transform: translateX(0);
+    }
+    from{
+        transform: translateX(50%)
+    }
 }
