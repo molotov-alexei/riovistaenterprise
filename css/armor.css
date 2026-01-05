@@ -13,10 +13,16 @@ body{
     background-color: var(--bg-main);
 }
 .header-containt{
+    container: header / inline-size;
+}
+.header-wrap{
     width: 100%;
     height: 200px;
+}
+.aside__contain{
 
 }
+
 .sidebar{
     padding: 0;
     width: 250px;
@@ -27,6 +33,7 @@ body{
 .main{
     display: flex;
     color: var(--text-main);
+    container: main / inline-size;
 }
 .ul__aside___nav{
     list-style: none;
@@ -65,16 +72,22 @@ body{
     height: auto;
     width: 100%;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 400px 600px;
     grid-template-rows: repeat(15, 450px) ;
     grid-auto-flow: row;
     border: 1px solid#000;
     gap: 20px;
+    box-sizing: border-box;
 }
 .items-armor{
     width: 100%;
     height: auto;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-wrap: balance;
 }
 
 .items-armor div {
@@ -91,8 +104,8 @@ position: relative;
     height: 100%; 
     border-radius: 15px;   
 }
-.s-link-1__p{
-    text-align: center;
+.items-armor p {
+    text-align: justify;
     line-height: 45px;
 }
 .--armor-2{
@@ -103,20 +116,61 @@ position: relative;
 .s-link-1__ul li{
     margin-bottom: 8px;
 }
-.carrousel-containt{
+
+.items-armor:nth-child(5){
+    grid-column: 1 / 3 ;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.items-armor:nth-child(5) img {
+    width: 90%;
+    height: 80%;
+    border-radius: 10px;
+}
+.items-armor:nth-child(6)  {
+    grid-column: 1 / 3 ;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.items-armor:nth-child(6) img {
+    margin: 0;
+    width: 90%;
+    height: 45%;
+    border-radius: 10px;
+}
+.items-armor:nth-child(7) img{
     width: 100%;
-    overflow: ;
+    height: 80%;
+    border-radius: 10px;
+
 }
-.carousel-slide {
-display: flex;
-width: 200%;
-animation: carousel-animation 3s infinite; 
+
+
+
+
+/*---------------------- medias querrys---------------------*/
+
+@container main (max-width: 700px){
+
+        .grid-content{
+            grid-template-columns:  1fr;    
+            gap: 1rem;
+        }
+        .aside__contain{
+            display: none;
+        }
+        .items-armor:nth-child(5){
+            grid-column: 1 / 2;
+            margin-top: 80px;
+        }
+        .items-armor:nth-child(6){
+            grid-column: 1 / 2;
+        }
 }
-@keyframes carousel-animation {
-    to{
-        transform: translateX(0);
-    }
-    from{
-        transform: translateX(50%)
-    }
+@container header (min-width: 700px){
+        .header-wrap{
+            display: none;
+        }
 }
