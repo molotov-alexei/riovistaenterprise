@@ -11,6 +11,9 @@ body{
     margin: 0;
     padding: 0;
     background-color: var(--bg-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header-containt{
     container: header / inline-size;
@@ -31,6 +34,7 @@ body{
 }
 
 .main{
+    width: 100dvw;
     display: flex;
     color: var(--text-main);
     container: main / inline-size;
@@ -78,6 +82,7 @@ body{
     border: 1px solid#000;
     gap: 20px;
     box-sizing: border-box;
+    place-content: center;
 }
 .items-armor{
     width: 100%;
@@ -146,6 +151,14 @@ position: relative;
     border-radius: 10px;
 
 }
+.items-armor:nth-child(9){
+    grid-column: 1 / 3;
+    line-height: 30px;
+    gap: 0;
+    padding: 0;
+
+}
+
 
 
 
@@ -168,6 +181,9 @@ position: relative;
         .items-armor:nth-child(6){
             grid-column: 1 / 2;
         }
+        .items-armor:nth-child(9){
+            grid-column: 1 / 2;
+}
 }
 @container header (min-width: 700px){
         .header-wrap{
