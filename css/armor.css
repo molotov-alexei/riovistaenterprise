@@ -14,6 +14,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .header-containt{
     container: header / inline-size;
@@ -75,7 +76,7 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: repeat(15, 450px) ;
+    grid-template-rows: repeat(30, 450px) ;
     grid-auto-flow: row;
     border: 1px solid#000;
     gap: 20px;
@@ -91,6 +92,7 @@ body{
     flex-direction: column;
     align-items: center;
     text-wrap: balance;
+    font-size: 1rem;
 }
 
 .items-armor div {
@@ -109,7 +111,16 @@ position: relative;
 }
 .items-armor p {
     text-align: justify;
-    line-height: 35px;
+    line-height: 20px;
+    padding: 10px;
+    margin-bottom: 60px;
+}
+.items-armor ul {
+    text-align: start;
+    line-height: 1.7rem;
+    padding-left: 25px;
+    margin-bottom: 40px;
+    
 }
 .--armor-2{
     width: 100%;
@@ -159,6 +170,7 @@ position: relative;
 .items-armor:nth-child(10) {
     display: flex;
     text-align: center;
+    box-sizing: border-box;
     
 }
 .items-armor:nth-child(10) img{
@@ -168,8 +180,13 @@ position: relative;
 
 .items-armor:nth-child(11) {
     display: flex;
-    text-align: center;
-    
+    text-align: center;  
+}
+.items-armor:nth-child(11)  h2  {
+    margin-top: 15px;
+}
+.items-armor:nth-child(11)  h3  {
+    margin-top: 0;
 }
 .items-armor:nth-child(11) img{
     width: 37%;
@@ -177,21 +194,21 @@ position: relative;
 }
 .items-armor:nth-child(12) {
     text-align: center;
+    padding-top: 15px;
 }
 
 .items-armor:nth-child(12) img{
-    width: 62%;
+    width: 57%;
     border-radius: 15px;
     filter: brightness(.9);
 }
 .items-armor:nth-child(13) img{
-    width: 33%;
+    width: 34%;
     border-radius: 10px;
 }
 .items-armor:nth-child(13) {
     text-align: center;
-    padding-top: 5px;
-    line-height: 5px;
+    line-height: 19px;
 }
 .items-armor:nth-child(13) h2 {
     margin-top: 25px;
@@ -233,6 +250,52 @@ position: relative;
 .items-armor:nth-child(19) ul  {
     line-height: 25px;
 }
+.items-armor:nth-child(20) img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.items-armor:nth-child(22)  {
+    padding-top: 40px;
+}
+.items-armor:nth-child(22) img  {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}.items-armor ul{
+    font-size: .8rem;
+}
+.items-armor p{
+    font-size: .9rem;
+}
+.items-armor:nth-child(24) {
+    grid-column: 1 / 3;
+    font-size: 2.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-left: 40px;
+    margin-bottom: 80px;
+}
+.items-armor:nth-child(24) img{
+    width: 26%;
+    height: 110%;
+    filter: brightness(.8);
+}
+.items-armor:nth-child(25) {
+}
+.items-armor:nth-child(25) img{
+    width: 95%;
+    height: auto;
+    border-radius: 10px;
+}
+.items-armor:nth-child(26) img{
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
 
 
 
@@ -241,6 +304,43 @@ position: relative;
 
 
 /*---------------------- medias querrys---------------------*/
+@container main (min-width: 1000px){
+    .items-armor p{
+        font-size: 1.2rem;
+        line-height: 30px;
+    }
+    .items-armor ul{
+        font-size: 1.2rem;
+    }
+}
+@container main (min-width: 900px){
+    .items-armor:nth-child(11) {
+    padding-top: 25px;  
+    }
+    .items-armor:nth-child(22) img  {
+    height: auto;
+
+}
+}
+@container main (min-width:700px) and (max-width: 1000px){
+    .items-armor:nth-child(20) img {
+    height: auto; 
+    }
+    .items-armor:nth-child(22) img {
+    height: auto; 
+    }
+    .items-armor:first-child img {
+    height: auto; 
+    }
+    .items-armor:nth-child(3) img {
+    height: auto; 
+    }
+    .items-armor:nth-child(7) img {
+    height: auto; 
+    }
+
+}
+
 
 @container main (max-width: 700px){
 
@@ -250,6 +350,9 @@ position: relative;
         }
         .aside__contain{
             display: none;
+        }
+        .items-armor{
+            font-size: 1rem ;
         }
         .items-armor:nth-child(1) {
             padding: 30px;
@@ -279,38 +382,64 @@ position: relative;
             grid-column: 1 / 2;
         }
         .items-armor:nth-child(10) img{
-        width: 40%; 
-        border-radius: 10px;
-        margin-top: 30px;
+            width: 40%; 
+            border-radius: 10px;
+            margin-top: 30px;
         }
-            .items-armor:nth-child(11) {
-        padding-top: 40px;
+        .items-armor:nth-child(11) {
+            padding-top: 40px;
         }
         .items-armor:nth-child(12) img{
-        width: 40%;
+            width: 40%;
         }
         .items-armor:nth-child(14) {
-        text-align: center;
-        border: 1px solid #f00;
-        padding-top: 25px;
-        grid-column: 1 / 2;
+            text-align: center;
+            padding-top: 25px;
+            grid-column: 1 / 2;
         }
         .items-armor:nth-child(14) img {
-        width: 36%;
+            width: 36%;
         }
         .items-armor:nth-child(15) {
-        grid-column: 1 / 2;
-        font-size: 1.7rem;
-        padding-left: 25px;
+            grid-column: 1 / 2;
+            font-size: 1.7rem;
+            padding-left: 25px;
         }
         .items-armor:nth-child(16) {
-        padding: 30px;
-        
+            padding: 30px;      
+            justify-content: center;
+            align-items: center;
+        }
+        .items-armor:nth-child(16) img {
+            width: 80%;
         }
         .items-armor:nth-child(18)  {
-        padding: 30px;
+            padding: 30px;
         }
-
+        .items-armor:nth-child(18) img {
+            width: 80%;
+        }
+        .items-armor:nth-child(20)  {
+        padding: 30px 60px;
+        }
+        .items-armor:nth-child(22) img  {
+        width: 80%;
+        height: auto;
+        }
+        .items-armor:nth-child(24){
+            grid-column: 1 / 2;
+        }
+        .items-armor:nth-child(24) img{
+            height: 100%;
+        }
+        .items-armor:nth-child(25) img{
+        width: 80%;
+        height: 85%;
+}
+.items-armor:nth-child(26) img{
+        width: 80%;
+        height: 80%;
+}
 }
 
 @container main (max-width: 450px){
