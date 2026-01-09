@@ -276,7 +276,7 @@ position: relative;
     justify-content: space-between;
     margin-top: 20px;
     padding-left: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 85px;
 }
 .items-armor:nth-child(24) img{
     width: 26%;
@@ -291,10 +291,16 @@ position: relative;
     border-radius: 10px;
 }
 .items-armor:nth-child(26) img{
-    width: 90%;
+    width: 70%;
     height: auto;
     border-radius: 10px;
 }
+.items-armor:nth-child(27) {
+    grid-column: 1 / 3;
+    align-items: start;
+    padding: 40px;
+}
+
 
 
 
@@ -310,7 +316,8 @@ position: relative;
         line-height: 30px;
     }
     .items-armor ul{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        line-height: 20px;
     }
 }
 @container main (min-width: 900px){
@@ -323,6 +330,10 @@ position: relative;
 }
 }
 @container main (min-width:700px) and (max-width: 1000px){
+    .items-armor ul{
+        line-height: 20px;
+        font-size: .9rem;
+    }
     .items-armor:nth-child(20) img {
     height: auto; 
     }
@@ -352,7 +363,10 @@ position: relative;
             display: none;
         }
         .items-armor{
-            font-size: 1rem ;
+            font-size: 1.1rem ;
+        }
+        .items-armor ul{
+            font-size: 1rem;
         }
         .items-armor:nth-child(1) {
             padding: 30px;
@@ -420,11 +434,14 @@ position: relative;
             width: 80%;
         }
         .items-armor:nth-child(20)  {
-        padding: 30px 60px;
+            padding: 30px 60px;
         }
         .items-armor:nth-child(22) img  {
-        width: 80%;
-        height: auto;
+            width: 80%;
+            height: auto;
+        }
+        .items-armor:nth-child(23){
+            margin-top: 4rem;
         }
         .items-armor:nth-child(24){
             grid-column: 1 / 2;
@@ -435,14 +452,26 @@ position: relative;
         .items-armor:nth-child(25) img{
         width: 80%;
         height: 85%;
-}
-.items-armor:nth-child(26) img{
+        }
+        .items-armor:nth-child(26) img{
         width: 80%;
         height: 80%;
-}
+        }
+        .items-armor:nth-child(27) {
+        grid-column: 1 / 2;
+        
+        }
 }
 
 @container main (max-width: 450px){
+        .items-armor p{
+            font-size: 1rem;
+        }
+        .items-armor ul{
+            font-size: .9rem;
+            line-height: 19px;
+        }
+        .i
         .items-armor:nth-child(2) p{
             font-size: .9rem;
             line-height: 25px;
