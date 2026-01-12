@@ -174,19 +174,8 @@ body{
     border-radius: 10px;
 }
 
-.items-armor:nth-child(11) {
-    display: flex;
-    text-align: center;  
-}
-.items-armor:nth-child(11)  h2  {
-    margin-top: 15px;
-}
-.items-armor:nth-child(11)  h3  {
-    margin-top: 0;
-}
 .items-armor:nth-child(11) img{
     width: 37%;
-    border-radius: 15px;
 }
 .items-armor:nth-child(12) {
     text-align: center;
@@ -199,15 +188,14 @@ body{
     filter: brightness(.9);
 }
 .items-armor:nth-child(13) img{
-    width: 34%;
+    width: 36%;
     border-radius: 10px;
 }
 .items-armor:nth-child(13) {
     text-align: center;
 }
 .items-armor:nth-child(14) {
-    text-align: center;
-    padding-top: 25px;    
+    text-align: center;  
     grid-column: 1 / 3;
 }
 .items-armor:nth-child(14) img {
@@ -331,8 +319,18 @@ body{
         .aside__contain{
             display: none;
         }
+        .items-armor{
+            padding: 40px;
+        }
+        .items-armor img{
+            width: 100%;
+            height: auto;
+        }
         .items-armor ul{
-            font-size: 1rem;
+            line-height: 25px;
+        }
+        .items-armor p{
+            line-height: 25px;
         }
         .items-armor:nth-child(1) {
             padding: 30px;
@@ -341,52 +339,33 @@ body{
             line-height: 25px;
             padding: 20px;
         }
-        .items-armor:nth-child(3) {
-            padding: 30px;
-        }
-        .items-armor:nth-child(4) ul{
-            line-height: 20px;
-        }
         .items-armor:nth-child(5){
             grid-column: 1 / 2;
-            margin-top: 30px;
         }
         .items-armor:nth-child(6){
             grid-column: 1 / 2;
         }
-        .items-armor:nth-child(7) {
-            padding: 30px;
-        }
-        .items-armor:nth-child(8) p {
-            line-height: 35px;
-            padding: 0 10px 0 20px;
-        }
         .items-armor:nth-child(9){
             grid-column: 1 / 2;
         }
-        .items-armor:nth-child(10) img{
-            width: 40%; 
-            border-radius: 10px;
-            margin-top: 30px;
+        .items-armor:nth-child(11){
+            text-align: center ;
         }
-        .items-armor:nth-child(11) {
-            padding-top: 40px;
+        .items-armor:nth-child(11) img{
+            width: 57%;
         }
-        .items-armor:nth-child(12) img{
-            width: 40%;
+        .items-armor:nth-child(13) img{
+            width: 57%;
         }
         .items-armor:nth-child(14) {
             text-align: center;
-            padding-top: 25px;
             grid-column: 1 / 2;
         }
-        .items-armor:nth-child(14) img {
-            width: 36%;
+        .items-armor:nth-child(14) img{
+            width: 57%;
         }
         .items-armor:nth-child(15) {
             grid-column: 1 / 2;
-            font-size: 1.7rem;
-            padding-left: 25px;
         }
         .items-armor:nth-child(16) {
             padding: 30px;      
@@ -394,44 +373,20 @@ body{
             align-items: center;
         }
         .items-armor:nth-child(16) img {
-            width: 80%;
-        }
-        .items-armor:nth-child(18)  {
-            padding: 30px;
+            width: 100%;
         }
         .items-armor:nth-child(18) img {
-            width: 80%;
-        }
-        .items-armor:nth-child(20)  {
-            padding: 30px 60px;
-        }
-        .items-armor:nth-child(22) img  {
-            width: 80%;
-            height: auto;
-        }
-        .items-armor:nth-child(23){
-            margin-top: 4rem;
+            width: 100%;
         }
         .items-armor:nth-child(24){
             grid-column: 1 / 2;
         }
-        .items-armor:nth-child(24) img{
-            height: 100%;
-        }
-        .items-armor:nth-child(25) img{
-        width: 80%;
-        height: 85%;
-        }
         .items-armor:nth-child(26) img{
-        width: 80%;
-        height: 80%;
+        width: 95%;
         }
         .items-armor:nth-child(27) {
         grid-column: 1 / 2;
         
-        }
-        .items-armor:nth-child(28)  {
-            padding: 40px;
         }
 }
 
