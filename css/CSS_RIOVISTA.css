@@ -134,14 +134,13 @@ a {
 
 .--blindaje{
     transition: .8s ;
-    background-image: url(imagenes/blindaje2.jpg);
+    background-image: url(ima);
     background-size: auto;
     background-position: 0 -500px;
 }
 
 .--blindaje:hover{
-    background-image: url(imagenes/cahaleco1.jpg);
-    background-size:auto;
+    background-image: url(../imagenes/);
     background-repeat: no-repeat;
     background-position: right;
 }
