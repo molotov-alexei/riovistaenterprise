@@ -11,6 +11,7 @@
     --width-img: clamp(100px, 100% , 700px);
     --font-p-ul-li-a:clamp(1rem, 1.5vw, 2rem);
     --font-icon:clamp(1.7rem,  4vw, 2.5rem);
+    --accent-color: #00ff41;
 }
 *{
     padding: 0;
@@ -90,7 +91,7 @@ body{
     width: 86%;
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: repeat(autofit, minmax(400px,clamp(200px, 10vh, 20vh)) );
+    grid-template-rows: repeat(minmax(400px,clamp(200px, 10vh, 20vh)) );
     grid-auto-flow: row;
     border: 1px solid#000;
     gap: 20px;
@@ -108,6 +109,7 @@ body{
     text-wrap: balance;
     font-size: var(--font-p-ul-li-a);
     padding-left: 10px;
+    text-align: center;
 }
 .items-armor ul{
     font-size: var(--font-p-ul-li-a);
@@ -116,6 +118,11 @@ body{
     width: var(--width-img);
     border-radius: 20px;
     border: #FF3B30;
+    transition: .5;
+}
+.items-armor:hover img{
+    border: 1px solid var(--accent-color);
+    transition: .5s;
 }
 
 .items-armor h2{
