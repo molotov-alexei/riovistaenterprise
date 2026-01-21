@@ -110,7 +110,6 @@ body{
     font-size: var(--font-p-ul-li-a);
     padding-left: 10px;
     text-align: center;
-    border: 1px solid #fff;
 }
 .items-foot ul{
     font-size: var(--font-p-ul-li-a);
