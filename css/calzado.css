@@ -8,7 +8,7 @@
     --accent-yellow: #FFCC00;
     --font-main: clamp(1rem, 1.5vw, 3rem);
     --sidebar-width: clamp(200px, 4vw +1rem, 600px);
-    --width-img: clamp(100px, 100% , 700px);
+    --width-img: clamp(210px, 100% , 700px);
     --font-p-ul-li-a:clamp(1rem, 1.5vw, 2rem);
     --font-icon:clamp(1.7rem,  4vw, 2.5rem);
     --accent-color: #00ff41;
@@ -86,7 +86,7 @@ body{
     background-color: rgba(0, 194, 255, 0.1);
     color: var(--text-main);
 }
-.protocol__header{
+.header__section{
     width: 100%;
     height: (200px, 10vh, 20vh);
     margin-top: 40px;
@@ -94,22 +94,43 @@ body{
     align-items: center;
     font-size: var(--font-p-ul-li-a);
 }
-.protocol__header img{
+.header__section img{
     width: 30%;
     border-radius: 8px;
     filter: brightness(.8);
+}
+.products__main{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.protocol__foot{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .grid-content{
     height: auto;
     width: 86%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, clamp(200px, 2vw, 8vw)));
+    grid-template-columns: repeat(auto-fit, minmax(200px, clamp(200px, 2vw, 8vw)));
     grid-template-rows: repeat( minmax(400px,clamp(200px, 10vh, 20vh)) );
     grid-auto-flow: row;
     gap: 20px;
     box-sizing: border-box;
     place-content: center;
     margin-top: 40px;
+}
+h2{
+    width: 100%;
+    text-align: center ;
+    margin: 40px 0;
+    font-size: clamp(3vw, 4vw, 8vw);
 }
 .items-foot ul{
     font-size: var(--font-p-ul-li-a);
@@ -118,10 +139,10 @@ body{
     width: var(--width-img);
     border-radius: 20px;
     border: #FF3B30;
-    transition: .5;
+    transition: .6;
 }
 .items-foot:hover img{
-    transform: scale(1.6);
+    transform: scale(1.5);
     transition: .6s;
 }
 
