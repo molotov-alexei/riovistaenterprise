@@ -66,7 +66,7 @@ body{
 }
 .ul__aside___nav li {
     display: flex;
-    margin: 20px;
+    margin: 15px;
     color: var(--accent-blue);
     width: var(--sidebar-width);
 }
@@ -79,7 +79,7 @@ body{
     padding-left: 30px;
 }
 .aside__item{
-    padding: 15px 10px;
+    padding: 0 10px;
     border-radius: 10px;
 }
 .aside__item:hover{
