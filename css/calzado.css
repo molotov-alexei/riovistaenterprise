@@ -138,12 +138,23 @@ h2{
 .items-foot img{
     width: var(--width-img);
     border-radius: 20px;
-    border: #FF3B30;
     transition: .6;
 }
 .items-foot:hover img{
     transform: scale(1.5);
     transition: .6s;
+}
+.items-foot:hover .foot-large{
+    transform: scale(1.5);
+    transition: .6s;
+    transform: translateY(50px);
+}
+.foot-large{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    font-weight: 700;    
 }
 
 
