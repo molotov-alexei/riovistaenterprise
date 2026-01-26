@@ -100,7 +100,7 @@ body{
     filter: brightness(.8);
 }
 .products__main{
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,11 +138,11 @@ h2{
 .items-foot img{
     width: var(--width-img);
     border-radius: 20px;
-    transition: .6;
+    transition: .2s;
 }
-.items-foot:hover img{
+.items-foot img:hover{
     transform: scale(1.5);
-    transition: .6s;
+    transition: .5s;
 }
 .items-foot:hover .foot-large{
     transform: scale(1.5);
