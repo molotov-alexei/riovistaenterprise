@@ -120,11 +120,6 @@ body{
     border: #FF3B30;
     transition: .5;
 }
-.items-armor:hover img{
-    border: 1px solid var(--accent-color);
-    transition: .5s;
-}
-
 .items-armor h2{
     text-align: center;
 }

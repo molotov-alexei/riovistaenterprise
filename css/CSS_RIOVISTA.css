@@ -49,14 +49,15 @@ a {
     background-color: var(--bg-panel);
     border-right: 1px solid #333;
     flex-shrink: 0;
-
+    z-index: 20;
+    height: 100%;
 }
-
 .sidebar {
     padding: 20px;
-    height: 100%;
     position: fixed;
     top: 0;
+    z-index: 3;
+    height: auto;
     
 }
 
@@ -140,6 +141,8 @@ a {
 .product__item:hover {
     transform: translateX(10px);
     border-left-color: var(--accent-yellow);
+    background-color: #0a0a0a;
+    border-bottom: 3px solid var(--accent-yellow);
 }
 
 .product__item a {
@@ -151,22 +154,28 @@ a {
 
 
 .--blindaje{
-    transition: .8s ;
+    transition: .3s ;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
     padding: 0;
 }
-.--blindaje img{
-    width: 100%;
-    height: 100%;
-    border-radius: 4px;
+.items__products__container{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.items__products__container img{
+    height: 60%;
+    border-radius: 0 8px 8px 0 ;
 }
 .--blindaje span{
     color: #fff;
-    font-size: clamp(3vw, 3vw, 8vw);
+    font-size: clamp(2vw, 18px, 6vw);
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
+    color: #fde;
 }
 .--defensa-electronica{
 transition: .8s  ;
@@ -198,13 +207,32 @@ transition: .8s;
 
 /* --- FOOTER --- */
 .footer {
-    background-color: var(--bg-panel);
-    color: var(--text-muted);
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid #333;
-    font-size: 0.9rem;
-}
+    background-color: #0A0A0A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    width: 100%;
+    padding-left: 250px;
+    
+    }
+    .footer a{
+        text-decoration: none;
+        color: var(--text-main);
+        font-size: clamp(2vw, 18px, 4vw);
+        z-index: -1;
+    }
+    .footer__item__logo{
+        width: clamp(10%, 15%, 17% );
+        height: 100%;
+    }
+    .footer img{
+        width: 100%;
+        height: 100%;
+    }
+    .footer a:hover{
+        color: var(--accent-blue);
+    }
 
 /* Responsive (Mobile) */
 @media (max-width: 768px) {
@@ -215,11 +243,12 @@ transition: .8s;
         top: 250px;
     }
     .sidebar{
+        padding: 0;
         padding-left: 5px;
         height: auto;
     }
     .aside__contain { width: 100%;
-        height: clamp(20vh, 25vh, 40vh);
+        height: clamp(183px, 25dvh, 40vh);
         display: flex;
         justify-content: center;
         position: fixed;
