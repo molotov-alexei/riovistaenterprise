@@ -3,7 +3,7 @@
     --bg-main: #0A0A0A;
     --bg-panel: #1F1F1F;
     --text-main: #FFFFFF;
-    --text-muted: #B0B0B0;
+    --text-muted: #d0d0d0;
     --accent-blue: #00C2FF; /* Cyber Blue */
     --accent-red: #FF3B30;   /* Warning/Action */
     --accent-yellow: #FFCC00;
@@ -57,7 +57,9 @@ a {
     position: fixed;
     top: 0;
     z-index: 3;
-    height: auto;
+    height: 100svh;
+        background-image: linear-gradient(to left,#000f,#0009, #0007, #000f),url(../imagenes/imagenes-index/temporales-IA/rv2.jpg);
+        background-size: cover;
     
 }
 
@@ -117,13 +119,20 @@ a {
     color: var(--text-main);
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .header__products p {
     color: var(--text-muted);
     margin-bottom: 40px;
-    max-width: 800px;
     line-height: 1.6;
+    width: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    padding: 0 40px;
+    text-align: justify;
+    writing-mode: balance;
+    font-size: clamp(1rem, 1.5rem, 3rem);
 }
 
 /* Product Cards */
@@ -153,7 +162,7 @@ a {
 }
 
 
-.--blindaje{
+.--blindaje, .--aeronautica, .--servicios, .--asesoria, .--dotaciones, .--alimentos{
     transition: .3s ;
     display: flex;
     flex-direction: column;
@@ -161,49 +170,26 @@ a {
     padding: 0;
 }
 .items__products__container{
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
+    height: 88%;
+    width: 100%;
 }
 .items__products__container img{
-    height: 60%;
-    border-radius: 0 8px 8px 0 ;
+    height: 100%;
+    border-radius: 0 8px 0px 0 ;
+    width: 100%;
 }
-.--blindaje span{
+.product__item span{
     color: #fff;
-    font-size: clamp(2vw, 18px, 6vw);
-    font-weight: 600;
+    font-size: clamp(2vw, 2rem, 7vw);
+    font-weight: 900;
     text-transform: uppercase;
     text-align: center;
-    color: #fde;
+    background-color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.--defensa-electronica{
-transition: .8s  ;
-background-image: url(imagenes/contramedidas.jpg);
-background-position: 0 -350px;
-background-repeat: no-repeat;
-background-size: cover;
-}
-.--defensa-electronica:hover{
-    background-image: url(imagenes/contramedidas2.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-position: right -1000px;
-}
-.--servicios{
-transition: .8s;
-    background-image: url(imagenes/servicios2.jpg);
-    background-size:auto;
-    background-repeat: no-repeat;
-    background-position: right -300px;
-}
-.--servicios:hover{
-    background-image: url(imagenes/servicios.jpg);
-    background-size:auto;
-    background-repeat: no-repeat;
-    background-position: right ;
-}
+
+
+
 
 /* --- FOOTER --- */
 .footer {

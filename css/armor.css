@@ -38,6 +38,9 @@ body{
     width: var(--sidebar-width);
     position: sticky ;
     top: 0;
+    background-image: linear-gradient(to left,#000f,#0009, #0007, #000f),url(../imagenes/imagenes-index/temporales-IA/rv2.jpg);
+    background-size: cover;
+    height: 100dvh;
 }
 .main{
     width: 100dvw;
@@ -76,10 +79,10 @@ body{
     color: var(--text-main);
     font-size: var(--font-main);
     width: var(--sidebar-width);
-    padding-left: 30px;
+    padding-left: 20px;
 }
 .aside__item{
-    padding: 15px 10px;
+    padding: 5px 10px;
     border-radius: 10px;
 }
 .aside__item:hover{

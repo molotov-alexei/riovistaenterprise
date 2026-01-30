@@ -38,6 +38,9 @@ body{
     width: var(--sidebar-width);
     position: sticky ;
     top: 0;
+    background-image: linear-gradient(to left,#000f,#0009, #0007, #000f),url(../imagenes/imagenes-index/temporales-IA/rv2.jpg);
+    background-size: cover;
+    height: 100dvh;
 }
 .main{
     width: 100dvw;
@@ -177,7 +180,9 @@ h2{
 
 }
 @container main (max-width: 800px){
-
+        .aside__item a{
+        display: none;        
+        }
 }
 @container header (min-width: 700px){
 
