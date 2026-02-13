@@ -6,7 +6,7 @@
     --accent-blue: #00C2FF; /* Cyber Blue */
     --accent-red: #FF3B30;   /* Warning/Action */
     --accent-yellow: #FFCC00;
-    --font-main: clamp(1rem, 1.5vw, 3rem);
+    --font-main: clamp(1rem, 1.1rem, 3rem);
     --sidebar-width: clamp(200px, 4vw +1rem, 600px);
     --width-img: clamp(100px, 100% , 700px);
     --font-p-ul-li-a:clamp(1rem, 1.5vw, 2rem);

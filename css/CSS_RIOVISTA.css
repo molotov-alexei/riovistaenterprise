@@ -3,10 +3,16 @@
     --bg-main: #0A0A0A;
     --bg-panel: #1F1F1F;
     --text-main: #FFFFFF;
-    --text-muted: #d0d0d0;
+    --text-muted: #B0B0B0;
     --accent-blue: #00C2FF; /* Cyber Blue */
     --accent-red: #FF3B30;   /* Warning/Action */
     --accent-yellow: #FFCC00;
+    --font-main: clamp(1rem, 1.1rem, 2rem);
+    --sidebar-width: clamp(200px, 4vw +1rem, 600px);
+    --width-img: clamp(100px, 100% , 700px);
+    --font-p-ul-li-a:clamp(1rem, 3.5vw, 3rem);
+    --font-icon:clamp(1.7rem,  4vw, 2.5rem);
+    --accent-color: #00ff41;
 }
 
 /* --- RESET & BASE --- */
@@ -57,7 +63,7 @@ a {
     position: fixed;
     top: 0;
     z-index: 3;
-    height: 100svh;
+    height: 100dvh;
     background-image: linear-gradient(to left,#000f,#0009, #0007, #000f),url(../imagenes/imagenes-index/temporales-IA/rv2.jpg);
     background-size: cover;
     
@@ -97,6 +103,14 @@ a {
 .aside__item:hover {
     background-color: rgba(0, 194, 255, 0.1);
     color: var(--text-main);
+}
+.ul__aside___nav a{
+    text-decoration: none;
+    margin-left: 5px;
+    color: var(--text-main);
+    font-size: var(--font-main);
+    width: var(--sidebar-width);
+    padding-left: 20px;
 }
 
 /* --- MAIN CONTENT --- */

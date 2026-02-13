@@ -6,11 +6,11 @@
     --accent-blue: #00C2FF; /* Cyber Blue */
     --accent-red: #FF3B30;   /* Warning/Action */
     --accent-yellow: #FFCC00;
-    --font-main: clamp(1rem, 1.5vw, 3rem);
+    --font-main: clamp(1rem, 1.1rem, 3rem);
     --sidebar-width: clamp(200px, 4vw +1rem, 600px);
     --width-img: clamp(210px, 100% , 700px);
     --font-p-ul-li-a:clamp(1rem, 1.5vw, 2rem);
-    --font-icon:clamp(1.7rem,  4vw, 2.5rem);
+    --font-icon:clamp(1.7rem,  1.8rem, 2.5rem);
     --accent-color: #00ff41;
 }
 *{
@@ -72,6 +72,7 @@ body{
     margin: 15px;
     color: var(--accent-blue);
     width: var(--sidebar-width);
+    padding: 3px 0;
 }
 .ul__aside___nav a{
     text-decoration: none;
