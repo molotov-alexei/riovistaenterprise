@@ -1,0 +1,54 @@
+:root {
+    --bg-main: #0A0A0A;
+    --bg-panel: #1F1F1F;
+    --text-main: #FFFFFF;
+    --text-muted: #B0B0B0;
+    --accent-blue: #00C2FF; /* Cyber Blue */
+    --accent-red: #FF3B30;   /* Warning/Action */
+    --accent-yellow: #FFCC00;
+    --font-main: clamp(1rem, 1.1rem, 2rem);
+    --sidebar-width: clamp(200px, 4vw +1rem, 600px);
+    --width-img: clamp(100px, 100% , 700px);
+    --font-p-ul-li-a:clamp(1rem, 3.5vw, 3rem);
+    --font-icon:clamp(1.7rem,  4vw, 2.5rem);
+    --accent-color: #00ff41;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form__containt{
+    width: clamp(200px, 800px, 1800px);
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form__items__fielset{
+    width: clamp(200px, 800px, 1800px);
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin-top: 40px;
+}
+form{
+    width: clamp(200px, 800px, 1800px);
+}
+textarea{
+    height: 250px;
+    width: clamp(200px, 800px, 1800px);
+}
+input{
+    height: 30px;
+    width: clamp(200px, 800px, 1800px);
+}
+label{
+    margin: 20px 0 5px 0;
+    width: clamp(200px, 800px, 1800px);
+}
