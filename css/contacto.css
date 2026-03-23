@@ -12,7 +12,7 @@
     --font-p-ul-li-a:clamp(1rem, 3.5vw, 3rem);
     --font-icon:clamp(1.7rem,  4vw, 2.5rem);
     --accent-color: #00ff41;
-    --form-width: clamp(280px, 440px, 1200px);
+    --form-width: clamp(280px, 400px, 1200px);
 }
 *{
     padding: 0;
@@ -24,13 +24,14 @@ body{
 }
 .main{
     width: 90%;
-    min-width: 400px;
+    min-width: 350px;
     padding-top: 50px;
     max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: auto;
     
 }
 .form__containt{
@@ -40,6 +41,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: clamp(1.3rem, 2rem, 2.5rem);
+    margin: auto;
 }
 .form__items__fielset{
     width: var(--form-width);
@@ -52,6 +54,7 @@ body{
 legend{
     width: auto;
 }
+fieldset{}
 form{
     width: var(--form-width);
     background-image: linear-gradient(#000a, #0003),url(../imagenes/imagenes-index/temporales-IA/rv2.jpg);
