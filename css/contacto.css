@@ -12,7 +12,7 @@
     --font-p-ul-li-a:clamp(1rem, 3.5vw, 3rem);
     --font-icon:clamp(1.7rem,  4vw, 2.5rem);
     --accent-color: #00ff41;
-    --form-width: clamp(280px, 400px, 1200px);
+    --form-width: clamp(280px, 300px, 1200px);
 }
 *{
     padding: 0;
@@ -49,18 +49,24 @@ body{
     display: flex;
     flex-direction: column;
     padding: 20px;
+    margin: auto;
     margin-top: 80px;
+}
+.form__items{
+    display: flex;
+    justify-content: center;
+    width: var;
 }
 legend{
     width: auto;
 }
-fieldset{}
+
 form{
-    width: var(--form-width);
+    width: auto;
     background-image: linear-gradient(#000a, #0003),url(../imagenes/imagenes-index/temporales-IA/rv2.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 20px 100px;
+    background-position: 20px 300px;
 
 }
 textarea{
@@ -75,5 +81,4 @@ input{
 label{
     margin: 5px 0 5px 0;
     width: var(--form-width);
-    padding-left: 10px;
 }
